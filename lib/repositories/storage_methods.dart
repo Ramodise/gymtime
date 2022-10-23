@@ -13,7 +13,7 @@ class StorageMethods {
     // creating location to our firebase storage
 
     Reference ref =
-    _storage.ref().child(childName).child(_auth.currentUser.uid);
+    _storage.ref().child(childName).child(_auth.currentUser.uid) //xx
     if(isPost) {
       String id = const Uuid().v1();
       ref = ref.child(id);
